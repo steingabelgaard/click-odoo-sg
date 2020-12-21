@@ -26,6 +26,11 @@ dist/
 # JetBrains IDE
 .idea/
 
+.project
+.pydevproject
+.vs/
+.vscode/
+
 # Unit test reports
 TEST*.xml
 
