@@ -37,5 +37,6 @@ setup(
     entry_points="""
         [console_scripts]
         click-odoo-pulltrans=click_odoo_sg.pulltrans:main
+        click-odoo-sg-uninstall=click_odoo_sg.sg_uninstall:main
         """,
 )
