@@ -39,5 +39,6 @@ setup(
         click-odoo-pulltrans=click_odoo_sg.pulltrans:main
         click-odoo-sg-uninstall=click_odoo_sg.sg_uninstall:main
         click-odoo-loadtrans=click_odoo_sg.loadtrans:main
+        click-odoo-list-modules=click_odoo_sg.list_modules:main
         """,
 )
