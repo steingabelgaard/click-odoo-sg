@@ -23,8 +23,8 @@ def list_modules(env, states):
     help="Comma-separated list of modulestates to list",
 )
 def main(env, states):
-    module_names = [m.strip() for m in modules.split(",")]
-    uninstall(env, module_names)
+    state_names = [m.strip() for m in states.split(",")]
+    uninstall(env, state_names)
 
 
 if __name__ == "__main__":  # pragma: no cover
