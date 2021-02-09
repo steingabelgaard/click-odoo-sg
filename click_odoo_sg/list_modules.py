@@ -24,7 +24,7 @@ def list_modules(env, states):
 )
 def main(env, states):
     state_names = [m.strip() for m in states.split(",")]
-    uninstall(env, state_names)
+    list_modules(env, state_names)
 
 
 if __name__ == "__main__":  # pragma: no cover
