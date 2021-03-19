@@ -19,7 +19,7 @@ def list_modules(env, states):
 @click.option(
     "--states",
     "-s",
-    default='installed',
+    default='installed,to upgrade',
     help="Comma-separated list of modulestates to list",
 )
 def main(env, states):
