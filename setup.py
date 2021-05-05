@@ -40,5 +40,6 @@ setup(
         click-odoo-sg-uninstall=click_odoo_sg.sg_uninstall:main
         click-odoo-loadtrans=click_odoo_sg.loadtrans:main
         click-odoo-list-modules=click_odoo_sg.list_modules:main
+        click-odoo-vacuum=click_odoo_sg.vacuum:main
         """,
 )
