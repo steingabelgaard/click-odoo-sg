@@ -25,7 +25,6 @@ def copy_pot(
     module,
     addons_dir,
     commit,
-    msgmerge_if_new_pot,
     commit_message,
     pot_branch,
 ):
