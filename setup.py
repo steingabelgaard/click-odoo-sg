@@ -41,5 +41,6 @@ setup(
         click-odoo-loadtrans=click_odoo_sg.loadtrans:main
         click-odoo-list-modules=click_odoo_sg.list_modules:main
         click-odoo-vacuum=click_odoo_sg.vacuum:main
+        click-odoo-copypot=click_odoo_sg.copypot:main
         """,
 )
