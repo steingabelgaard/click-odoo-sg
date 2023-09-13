@@ -40,8 +40,10 @@ def copy_pot(
     subprocess.call(['git', 'checkout', 'origin/' + pot_branch, '--', pot_filepath])
     subprocess.call(['git', 'checkout', 'origin/' + pot_branch, '--', po_filepath])
     files_to_commit = set()
-    files_to_commit.add(pot_filepath)
-    files_to_commit.add(po_filepath)
+    if os.path.isfile(pot_filepath):
+        files_to_commit.add(pot_filepath)
+    if os.path.isfile(po_filepath):
+        files_to_commit.add(po_filepath)
     
     if commit:
         gitutils.commit_if_needed(
