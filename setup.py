@@ -18,6 +18,7 @@ setup(
     install_requires=[
         "click-odoo>=1.3.0",
         "importlib_resources ; python_version<'3.9'",
+        "click-odoo-contrib",
     ],
     license="LGPLv3+",
     author="Stein & Gabelgaard ApS",
@@ -42,5 +43,6 @@ setup(
         click-odoo-list-modules=click_odoo_sg.list_modules:main
         click-odoo-vacuum=click_odoo_sg.vacuum:main
         click-odoo-copypot=click_odoo_sg.copypot:main
+        click-odoo-save-checksum=click_odoo_sg.save_checksum:main
         """,
 )
