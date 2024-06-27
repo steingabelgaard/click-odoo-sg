@@ -9,9 +9,6 @@ from click_odoo_contrib.update import _save_installed_checksums
 @click.command()
 @click_odoo.env_options(
     with_rollback=False,
-    database_must_exist=False,
-    with_addons_path=True,
-    environment_manager=OdooEnvironmentWithUpdate,
 )
 @click.option(
     "--ignore-addons",
@@ -25,11 +22,8 @@ def main(
     env,
     ignore_addons,
 ):
-    if not env:
-        msg = "Database does not exist"
-        raise click.ClickException(msg)
-    
+    """ Save module checksums """
     _save_installed_checksums(env.cr, ignore_addons)
-    
+
 if __name__ == "__main__":  # pragma: no cover
     main()
