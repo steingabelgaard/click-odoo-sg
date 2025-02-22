@@ -14,7 +14,7 @@ setup(
     use_scm_version=True,
     packages=find_packages(),
     include_package_data=True,
-    setup_requires=["setuptools-scm"],
+    setup_requires=["setuptools-scm==8.1.0"],
     install_requires=[
         "click-odoo>=1.3.0",
         "importlib_resources ; python_version<'3.9'",
@@ -28,10 +28,10 @@ setup(
         "Intended Audience :: Developers",
         "License :: OSI Approved :: "
         "GNU Lesser General Public License v3 or later (LGPLv3+)",
-        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
         "Framework :: Odoo",
     ],
     entry_points="""
