@@ -20,6 +20,7 @@ setup(
         "importlib_resources ; python_version<'3.9'",
         "click-odoo-contrib",
     ],
+    python_requires=">=3.6",
     license="LGPLv3+",
     author="Stein & Gabelgaard ApS",
     author_email="info@steingabelgaard.dk",
