@@ -98,10 +98,10 @@ def main(
             addon_name for addon_name in addon_names if addon_name in modules
         ]
     if addon_names:
-        modules = env["ir.module.module"].search(
-            [("state", "=", "installed"), ("name", "in", addon_names)]
-        )
-        for module in modules:
+        # modules = env["ir.module.module"].search(
+        #    [("state", "=", "installed"), ("name", "in", addon_names)]
+        # )
+        for module in addon_names:
             copy_pot(
                 env,
                 module,
