@@ -28,7 +28,7 @@ def copy_pot(
     commit_message,
     pot_branch,
 ):
-    addon_name = module.name
+    addon_name = module # .name
     addon_dir = os.path.join(addons_dir, addon_name)
     i18n_path = os.path.join(addon_dir, "i18n")
     pot_filepath = os.path.join(i18n_path, addon_name + POT_FILE_EXT)
